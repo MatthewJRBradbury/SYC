@@ -10,83 +10,95 @@
       href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Pontano+Sans:wght@300..700&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
     <title>SYC Counselling</title>
   </head>
   <body
-    class="gradient max-w-[1200px] leading-normal tracking-normal text-white"
+    class="gradient container max-w-[1200px] leading-normal tracking-normal text-white"
   >
     <header
-      class="bg-primary text-primary-foreground absolute z-10 py-6 leading-none md:py-8 lg:py-8"
+      class="bg-primary text-primary-foreground absolute z-10 flex w-full sm:justify-between lg:justify-normal items-center lg:items-baseline px-6 py-6 leading-none md:py-8 md:pl-8 md:pr-12 lg:py-8 lg:pl-12 lg:pr-20 xl:pl-14 xl:pr-32"
     >
-      <div
-        class="container flex items-center px-6 md:pl-8 md:pr-12 lg:pl-12 lg:pr-20 xl:pl-14 xl:pr-32"
-      >
-        <div class="mr-[3vw]">
-          <a href="/" class="text-1xl font-NotoSerif font-bold md:text-3xl"
-            >SYC Counselling</a
-          >
-        </div>
-        <nav class="text-1xl flex flex-row gap-1 md:gap-4 md:text-xl">
-          <a class="navlink inline-block px-4 py-2" href="#">Services</a>
-          <a class="navlink inline-block px-4 py-2" href="#">About me</a>
-          <a class="navlink inline-block px-4 py-2" href="contact/">Contact</a>
-          <a class="navlink inline-block px-4 py-2" href="faq/">FAQ</a>
-          <a class="navlink inline-block px-4 py-2" href="privacy/">Privacy</a>
-        </nav>
+      <div class="mr-[3vw] w-full md:w-auto">
+        <a href="/" class="text-1xl font-NotoSerif font-bold md:text-3xl"
+          >SYC Counselling</a
+        >
       </div>
+      <nav class="text-1xl hidden flex-row gap-1 md:gap-4 md:text-xl lg:flex">
+        <a class="inline-block px-4 py-2" href="#">Services</a>
+        <a class="inline-block px-4 py-2" href="#">About me</a>
+        <a class="inline-block px-4 py-2" href="contact/">Contact</a>
+        <a class="inline-block px-4 py-2" href="faq/">FAQ</a>
+        <a class="inline-block px-4 py-2" href="privacy/">Privacy</a>
+      </nav>
+      <button
+        id="mobile-nav-toggle"
+        class="bg-primary hover:bg-secondary rounded-full p-2 transition-colors duration-300 lg:hidden"
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="h-6 w-6 fill-current text-white"
+          viewBox="0 0 24 24"
+          stroke="currentColor"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M4 6h16M4 12h16M4 18h16"
+          />
+        </svg>
+      </button>
     </header>
     <main>
-        <!--Hero-->
-        <div class="pt-24">
-          <div
-            class="container flex flex-col flex-wrap items-center px-6 md:flex-row md:pl-16 lg:pl-20 xl:pl-32"
-          >
-            <!--Left Col-->
-            <div
-              class="mt-80 z-10 w-full flex-col items-start justify-center text-center md:w-3/5 lg:w-3/5 md:text-left"
-            >
-              <h1 class="my-4 font-NotoSerif text-5xl font-bold leading-tight">
-                SYCounselling
-              </h1>
-              <!-- underline rose color:hsla(17.24137931,50.28901734%,66.07843137%,1) -->
-              <p class="mb-8 text-2xl leading-normal">
-                Get accessible and personalized mental healthcare from the
-                comfort of your own home.
-              </p>
-            </div>
-          </div>
-        </div>
+      <!--Hero-->
+      <div class="pt-24">
         <div
-          class="pointer-events-none absolute bottom-0 left-0 right-0 top-0 overflow-hidden"
+          class="flex flex-col flex-wrap items-center px-6 md:flex-row md:pl-16 lg:pl-20 xl:pl-32"
         >
-          <div class="relative">
-            <img
-              src="/images/grant-N90LM3A5AZQ-unsplash2400x1600.jpg"
-              srcset="
-                /images/grant-N90LM3A5AZQ-unsplash2400x1600.jpg?format=100w   100w,
-                /images/grant-N90LM3A5AZQ-unsplash2400x1600.jpg?format=300w   300w,
-                /images/grant-N90LM3A5AZQ-unsplash2400x1600.jpg?format=500w   500w,
-                /images/grant-N90LM3A5AZQ-unsplash2400x1600.jpg?format=750w   750w,
-                /images/grant-N90LM3A5AZQ-unsplash2400x1600.jpg?format=1000w  200w,
-                /images/grant-N90LM3A5AZQ-unsplash2400x1600.jpg?format=1500w  700w,
-                /images/grant-N90LM3A5AZQ-unsplash2400x1600.jpg?format=2400w 1600w
-              "
-              class="w-full h-[700px] object-cover object-bottom"
-              width="2400"
-              height="1600"
-              sizes="(max-width: 799px) 200vw, 100vw"
-              alt="lady on a couch"
-              fetchpriority="high"
-              loading="eager"
-              decoding="async"
-              elementtiming="nbf-background"
-            />
-            <div
-              class="absolute inset-0 block bg-[hsla(174.54545455,8.02919708%,26.8627451%,1)] opacity-45"
-            ></div>
+          <!--Left Col-->
+          <div
+            class="z-10 mt-80 w-full flex-col items-start justify-center text-left md:w-3/5 lg:w-3/5"
+          >
+            <h1 class="my-4 font-NotoSerif text-4xl md:text-5xl font-bold leading-tight">
+              SYCounselling
+            </h1>
+            <!-- underline rose color:hsla(17.24137931,50.28901734%,66.07843137%,1) -->
+            <p class="mb-8 text-2xl leading-normal">
+              Get accessible and personalized mental healthcare from the comfort
+              of your own home.
+            </p>
           </div>
         </div>
+      </div>
+      <div class="pointer-events-none absolute inset-0 overflow-hidden">
+        <div class="relative">
+          <img
+            src="/images/grant-N90LM3A5AZQ-unsplash2400x1600.jpg"
+            srcset="
+              /images/grant-N90LM3A5AZQ-unsplash2400x1600.jpg?format=100w   100w,
+              /images/grant-N90LM3A5AZQ-unsplash2400x1600.jpg?format=300w   300w,
+              /images/grant-N90LM3A5AZQ-unsplash2400x1600.jpg?format=500w   500w,
+              /images/grant-N90LM3A5AZQ-unsplash2400x1600.jpg?format=750w   750w,
+              /images/grant-N90LM3A5AZQ-unsplash2400x1600.jpg?format=1000w  200w,
+              /images/grant-N90LM3A5AZQ-unsplash2400x1600.jpg?format=1500w  700w,
+              /images/grant-N90LM3A5AZQ-unsplash2400x1600.jpg?format=2400w 1600w
+            "
+            class="h-[700px] w-full object-cover object-bottom"
+            width="2400"
+            height="1600"
+            sizes="(max-width: 799px) 200vw, 100vw"
+            alt="lady on a couch"
+            fetchpriority="high"
+            loading="eager"
+            decoding="async"
+            elementtiming="nbf-background"
+          />
+          <div
+            class="absolute inset-0 block bg-[hsla(174.54545455,8.02919708%,26.8627451%,1)] opacity-45"
+          ></div>
+        </div>
+      </div>
     </main>
   </body>
 </html>

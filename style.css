@@ -8,6 +8,17 @@
   }
 }
 
-.gradient {
+/* .gradient {
   background: linear-gradient(90deg, #b697c2 0%, #c88dda 100%);
+} */
+
+.gradient {
+  background: 
+    linear-gradient(
+      90deg,
+      #b697c2 0%,
+      #c88dda 50%,
+      #c88dda 75%,
+      #b697c2 100%
+    );
 }
