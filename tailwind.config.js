@@ -7,6 +7,9 @@ export default {
         PontanoSans: ["Pontano Sans"],
         NotoSerif: ["Noto Serif"],
       },
+      textColor: {
+        primary: '#3F4A49'
+      }
     },
   },
   plugins: [require("@tailwindcss/typography")],
