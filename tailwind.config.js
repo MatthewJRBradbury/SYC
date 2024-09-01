@@ -8,8 +8,15 @@ export default {
         NotoSerif: ["Noto Serif"],
       },
       textColor: {
-        primary: '#3F4A49'
-      }
+        primary: "#3F4A49",
+      },
+      backgroundColor: {
+        darkGreen: "#495A58",
+      },
+      colors: {
+        roseAccent: "#D4967D",
+        roseAccentHover: "#D5A48E",
+      },
     },
   },
   plugins: [require("@tailwindcss/typography")],
