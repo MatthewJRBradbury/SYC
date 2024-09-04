@@ -1,3 +1,4 @@
+"use strict";
 import "./style.css";
 
 // For click event and also reference for outer div tag
