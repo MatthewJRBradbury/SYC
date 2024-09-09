@@ -16,27 +16,38 @@
   <body class="w-full leading-normal tracking-normal text-white">
     <header
       id="header"
-      class="bg-primary text-primary-foreground absolute z-10 flex w-full items-center px-6 py-6 leading-none sm:justify-between md:py-8 md:pl-8 md:pr-12 lg:items-baseline lg:justify-normal lg:py-8 lg:pl-12 lg:pr-20 xl:pl-14 xl:pr-32"
+      class="bg-primary text-primary-foreground absolute z-10 flex w-full items-center px-6 py-6 leading-none sm:justify-between md:py-8 md:pl-8 md:pr-12 lg:items-baseline lg:justify-normal lg:py-5 lg:pl-12 xl:pl-14 2xl:px-24"
     >
       <a
         href="#main"
-        class="absolute left-[-10000px] top-auto z-[60] box-border h-[1px] w-[1px] overflow-hidden bg-darkGreen px-[1.4em] py-[1.4em] focus:left-5 focus:h-auto focus:w-auto"
+        class="absolute left-[-10000px] top-auto z-[60] box-border overflow-hidden bg-darkGreen px-[1.4em] py-[1.4em] focus:left-5 focus:h-auto focus:w-auto"
         >Skip to main content</a
       >
-      <div class="z-50 mr-[3vw] w-full md:w-auto">
-        <a href="/" class="text-1xl font-NotoSerif font-bold md:text-3xl"
+      <div class="z-50 my-auto mr-[3vw] w-auto">
+        <a
+          href="/"
+          class="text-nowrap py-1 font-NotoSerif text-lg font-bold sm:text-xl md:text-2xl lg:text-2xl xl:text-3xl"
           >SYC Counselling</a
         >
       </div>
       <!-- Fullsize Nav -->
-      <nav class="text-1xl md:text-xl" aria-label="fullsize navigation menu">
-        <ul class="hidden flex-row gap-1 md:gap-4 lg:flex">
-          <li><a class="inline-block px-4 py-2" href="#">Services</a></li>
+      <nav
+        class="flex w-full font-PontanoSans text-base xl:text-xl"
+        aria-label="fullsize navigation menu"
+      >
+        <ul class="my-auto hidden flex-row gap-1 md:gap-4 lg:flex">
+          <li>
+            <a class="inline-block px-4 py-2" href="#">Services & Fees</a>
+          </li>
           <li><a class="inline-block px-4 py-2" href="#">About me</a></li>
           <li><a class="inline-block px-4 py-2" href="contact/">Contact</a></li>
           <li><a class="inline-block px-4 py-2" href="faq/">FAQ</a></li>
-          <li><a class="inline-block px-4 py-2" href="privacy/">Privacy</a></li>
         </ul>
+        <a
+          href="#"
+          class="ml-auto hidden bg-roseAccent px-8 py-4 text-center text-white hover:opacity-85 lg:block lg:px-8"
+          >BOOK APPOINTMENT</a
+        >
       </nav>
       <!-- Burger Menu Button -->
       <button
@@ -274,11 +285,11 @@
           <ul class="mb-7 leading-10">
             <a href="#" class="mr-4 underline underline-offset-2">Services</a>
             <a href="#" class="mr-4 underline underline-offset-2">About me</a>
-            <a href="/contact/" class="mr-4 underline underline-offset-2"
+            <a href="contact/" class="mr-4 underline underline-offset-2"
               >Contact me</a
             >
-            <a href="/faq/" class="mr-4 underline underline-offset-2">FAQ</a>
-            <a href="/privacy/" class="mr-4 underline underline-offset-2"
+            <a href="faq/" class="mr-4 underline underline-offset-2">FAQ</a>
+            <a href="privacy/" class="mr-4 underline underline-offset-2"
               >Privacy</a
             >
             <a href="#" class="underline underline-offset-2">Appointment</a>
