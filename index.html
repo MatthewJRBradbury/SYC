@@ -35,14 +35,12 @@
         class="flex w-full font-PontanoSans text-base xl:text-xl"
         aria-label="fullsize navigation menu"
       >
-        <ul class="my-auto hidden flex-row gap-1 md:gap-4 lg:flex">
-          <li>
-            <a class="inline-block px-4 py-2" href="#">Services & Fees</a>
-          </li>
-          <li><a class="inline-block px-4 py-2" href="#">About me</a></li>
-          <li><a class="inline-block px-4 py-2" href="contact/">Contact</a></li>
-          <li><a class="inline-block px-4 py-2" href="faq/">FAQ</a></li>
-        </ul>
+        <div class="my-auto hidden flex-row gap-1 md:gap-4 lg:flex">
+          <a class="inline-block px-4 py-2" href="#">Services & Fees</a>
+          <a class="inline-block px-4 py-2" href="#">About me</a>
+          <a class="inline-block px-4 py-2" href="contact/">Contact</a>
+          <a class="inline-block px-4 py-2" href="faq/">FAQ</a>
+        </div>
         <a
           href="#"
           class="ml-auto hidden rounded-sm bg-roseAccent px-8 py-4 text-center text-white hover:opacity-85 lg:block lg:px-8"
@@ -67,43 +65,33 @@
           class="relative top-1/4 w-full text-center"
           aria-label="mobile navigation"
         >
-          <ul>
-            <li>
-              <a
-                class="block p-4 text-4xl text-white no-underline underline-offset-8 transition"
-                href="#"
-                >Services</a
-              >
-            </li>
-            <li>
-              <a
-                class="block p-4 text-4xl text-white no-underline underline-offset-8 transition"
-                href="#"
-                >About me</a
-              >
-            </li>
-            <li>
-              <a
-                class="block p-4 text-4xl text-white no-underline underline-offset-8 transition"
-                href="contact/"
-                >Contact</a
-              >
-            </li>
-            <li>
-              <a
-                class="block p-4 text-4xl text-white no-underline underline-offset-8 transition"
-                href="faq/"
-                >FAQ</a
-              >
-            </li>
-            <li class="mt-16 block">
-              <a
-                href="#"
-                class="mx-auto text-nowrap rounded-sm bg-roseAccent px-12 py-7 text-center font-PontanoSans text-lg tracking-wider text-white hover:opacity-85 sm:px-16"
-                >BOOK APPOINTMENT</a
-              >
-            </li>
-          </ul>
+          <a
+            class="block p-4 text-4xl text-white no-underline underline-offset-8 transition"
+            href="#"
+            >Services</a
+          >
+          <a
+            class="block p-4 text-4xl text-white no-underline underline-offset-8 transition"
+            href="#"
+            >About me</a
+          >
+          <a
+            class="block p-4 text-4xl text-white no-underline underline-offset-8 transition"
+            href="contact/"
+            >Contact</a
+          >
+          <a
+            class="block p-4 text-4xl text-white no-underline underline-offset-8 transition"
+            href="faq/"
+            >FAQ</a
+          >
+          <div class="mt-16 block">
+            <a
+              href="#"
+              class="mx-auto text-nowrap rounded-sm bg-roseAccent px-12 py-7 text-center font-PontanoSans text-lg tracking-wider text-white hover:opacity-85 sm:px-16"
+              >BOOK APPOINTMENT</a
+            >
+          </div>
         </nav>
       </div>
     </header>
@@ -240,8 +228,15 @@
                 decoding="async"
               />
               <div class="mt-6 flex-col min-[820px]:mt-12">
-                <sup>Therapeutic Counseller</sup>
+                <p class="pb-2 text-lg">Therapeutic Counseller</p>
                 <h3 class="font-NotoSerif text-3xl">Sochetta Chhim</h3>
+                <p
+                  aria-label="Therapist name pronounciation"
+                  class="ml-4 text-sm italic"
+                >
+                  Phonetic: soh-chet-uh
+                  <span aria-hidden="true">- səʊtʃɛtə</span>
+                </p>
                 <p
                   class="px-3 py-3 leading-[1.8em] sm:px-14 min-[820px]:px-7 lg:px-14"
                 >
