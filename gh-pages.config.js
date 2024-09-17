@@ -20,6 +20,7 @@ export default defineConfig({
         book: "./book-appointment/index.html/",
         contact: "./contact/index.html/",
         privacy: "./privacy/index.html/",
+        about: "./about-me/index.html/",
       },
     },
   },
