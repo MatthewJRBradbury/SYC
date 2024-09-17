@@ -17,7 +17,7 @@ export default defineConfig({
       input: {
         index: "index.html",
         faq: "./faq/index.html/",
-        book: "./book/index.html/",
+        book: "./book-appointment/index.html/",
         contact: "./contact/index.html/",
         privacy: "./privacy/index.html/",
       },
