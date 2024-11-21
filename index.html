@@ -19,16 +19,14 @@
       1. Add Toggle to change text content between English and Khmer
         1.1. Use Khmer font: https://fonts.google.com/specimen/Khmer/about
         1.2. Make Khmer versions of pages denoted in url by /kh this way accessbility also works for khmer
-      2. Finish Services Page
-      3. Add ARIA tags
-      4. Configure all Images to load fast
-        4.1. reduce img size by converting to webp format
-        4.2. load appropriate size based on users screen size
-        4.3. make sure loading looks decent by having a low res blur version placeholder
-      5. Make sure site passes all google lighthouse tests
-      6. Make sure site passes all accessibility plugin tests
-      7. fix spacing between H1 headings and content (currently inconsistent)
-      8. Fix homepage text content!
+      2. Add ARIA tags
+      3. Configure all Images to load fast
+        3.1. reduce img size by converting to webp format
+        3.2. load appropriate size based on users screen size
+        3.3. make sure loading looks decent by having a low res blur version placeholder
+      4. Make sure site passes all google lighthouse tests
+      5. Make sure site passes all accessibility plugin tests
+      6. fix spacing between H1 headings and content (currently inconsistent)
     -->
     <header
       id="header"
@@ -138,13 +136,9 @@
             <img
               src="/images/grant-N90LM3A5AZQ-unsplash2400x1600.jpg"
               srcset="
-                /images/grant-N90LM3A5AZQ-unsplash2400x1600.jpg?format=100w   100w,
-                /images/grant-N90LM3A5AZQ-unsplash2400x1600.jpg?format=300w   300w,
-                /images/grant-N90LM3A5AZQ-unsplash2400x1600.jpg?format=500w   500w,
-                /images/grant-N90LM3A5AZQ-unsplash2400x1600.jpg?format=750w   750w,
-                /images/grant-N90LM3A5AZQ-unsplash2400x1600.jpg?format=1000w 1000w,
-                /images/grant-N90LM3A5AZQ-unsplash2400x1600.jpg?format=1500w 1500w,
-                /images/grant-N90LM3A5AZQ-unsplash2400x1600.jpg?format=2400w 2400w
+                /images/grant-N90LM3A5AZQ-unsplash640x427.jpg 640w,
+                /images/grant-N90LM3A5AZQ-unsplash1920x1280.jpg 1920w,
+                /images/grant-N90LM3A5AZQ-unsplash2400x1600.jpg 2400w,
               "
               class="h-svh max-h-[1600px] min-h-[600px] w-full object-cover object-bottom lg:h-[700px]"
               width="2400"
