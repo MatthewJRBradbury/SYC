@@ -16,6 +16,8 @@ export default {
       colors: {
         roseAccent: "#D4967D",
         roseAccentHover: "#D5A48E",
+        imgBg: "#e9e7e2",
+        directSection: "#DCD9D0"
       },
       keyframes: {
         fadeIn: {
