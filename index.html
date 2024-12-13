@@ -142,15 +142,23 @@
         </div>
         <!-- Hero Image -->
         <div class="pointer-events-none absolute inset-0 h-min overflow-hidden">
-          <div class="relative z-[-10]">
+          <div class="relative z-[-20]">
+            <div
+              class="absolute inset-0 z-[-10] h-svh max-h-[1600px] min-h-[600px] w-full bg-cover bg-center bg-no-repeat object-cover object-bottom blur-lg lg:h-[700px]"
+              style="
+                background-image: url(&quot;/SYC/images/placeholder.jpg&quot;);
+              "
+              id="placeholder-hero-image"
+            ></div>
             <img
-              src="/images/grant-N90LM3A5AZQ-unsplash2400x1600.jpg"
+              id="high-quality-hero-img"
+              src="/images/grant-N90LM3A5AZQ-unsplash1920x1280.jpg"
               srcset="
                 /images/grant-N90LM3A5AZQ-unsplash640x427.jpg    640w,
                 /images/grant-N90LM3A5AZQ-unsplash1920x1280.jpg 1920w,
                 /images/grant-N90LM3A5AZQ-unsplash2400x1600.jpg 2400w
               "
-              class="h-svh max-h-[1600px] min-h-[600px] w-full object-cover object-bottom lg:h-[700px]"
+              class="h-svh max-h-[1600px] min-h-[600px] w-full object-cover object-bottom transition-opacity duration-300 ease-linear lg:h-[700px]"
               width="2400"
               height="1600"
               sizes="(max-width: 799px) 200vw, 100vw"
@@ -238,7 +246,7 @@
                 class="mx-auto block h-[350px] min-w-[262.50px] content-center rounded-bl-[57%] rounded-br-[41%] rounded-tl-[41%] rounded-tr-[57%] bg-imgBg sm:h-[400px] sm:min-w-[300px] md:h-[500px] md:min-w-[375px] lg:h-[500px] xl:h-[500px]"
                 fetchpriority="high"
                 alt="Portrait of Sochetta Chhim"
-                loading="eager"
+                loading="lazy"
                 decoding="async"
               />
               <div class="mt-6 flex-col min-[820px]:mt-12">
