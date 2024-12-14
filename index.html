@@ -150,25 +150,45 @@
               "
               id="placeholder-hero-image"
             ></div>
-            <img
-              id="high-quality-hero-img"
-              src="/images/grant-N90LM3A5AZQ-unsplash1920x1280.jpg"
-              srcset="
-                /images/grant-N90LM3A5AZQ-unsplash640x427.jpg    640w,
-                /images/grant-N90LM3A5AZQ-unsplash1920x1280.jpg 1920w,
-                /images/grant-N90LM3A5AZQ-unsplash2400x1600.jpg 2400w
-              "
-              class="h-svh max-h-[1600px] min-h-[600px] w-full object-cover object-bottom transition-opacity duration-300 ease-linear lg:h-[700px]"
-              width="2400"
-              height="1600"
-              sizes="(max-width: 799px) 200vw, 100vw"
-              alt="lady on a couch"
-              fetchpriority="high"
-              loading="eager"
-              decoding="async"
-              role="presentation"
-              elementtiming="nbf-background"
-            />
+            <picture>
+              <source
+                type="image/avif"
+                sizes="(max-width: 799px) 200vw, 100vw"
+                srcset="
+                  /images/grant-N90LM3A5AZQ-unsplash840x560.avif    640w,
+                  /images/grant-N90LM3A5AZQ-unsplash1920x1280.avif 1920w,
+                  /images/grant-N90LM3A5AZQ-unsplash2400x1600.avif 2400w,
+                "
+              />
+              <source
+                type="image/webp"
+                sizes="(max-width: 799px) 200vw, 100vw"
+                srcset="
+                  /images/grant-N90LM3A5AZQ-unsplash840x560.webp    640w,
+                  /images/grant-N90LM3A5AZQ-unsplash1920x1280.webp 1920w,
+                  /images/grant-N90LM3A5AZQ-unsplash2400x1600.webp 2400w
+                "
+              />
+              <img
+                id="high-quality-hero-img"
+                src="/images/grant-N90LM3A5AZQ-unsplash1920x1280.jpg"
+                srcset="
+                  /images/grant-N90LM3A5AZQ-unsplash640x427.jpg    640w,
+                  /images/grant-N90LM3A5AZQ-unsplash1920x1280.jpg 1920w,
+                  /images/grant-N90LM3A5AZQ-unsplash2400x1600.jpg 2400w
+                "
+                class="h-svh max-h-[1600px] min-h-[600px] w-full object-cover object-bottom transition-opacity duration-300 ease-linear lg:h-[700px]"
+                width="2400"
+                height="1600"
+                sizes="(max-width: 799px) 200vw, 100vw"
+                alt="lady on a couch"
+                fetchpriority="high"
+                loading="eager"
+                decoding="async"
+                role="presentation"
+                elementtiming="nbf-background"
+              />
+            </picture>
             <div
               class="absolute inset-0 block bg-[hsla(174.54545455,8.02919708%,26.8627451%,1)] opacity-45"
             ></div>
