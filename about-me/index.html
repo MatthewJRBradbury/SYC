@@ -119,14 +119,20 @@
             </h1>
             <div class="my-16 px-6 md:px-14">
               <div class="flex flex-col py-4 min-[820px]:flex-row">
-                <img
-                  src="/images/Sochetta_Portrait.jpg"
-                  class="mx-auto block h-[350px] w-[262.50px] min-w-[262.50px] content-center rounded-bl-[57%] rounded-br-[41%] rounded-tl-[41%] rounded-tr-[57%] bg-imgBg sm:h-[400px] sm:w-[300px] sm:min-w-[300px] md:h-[500px] md:w-[375px] md:min-w-[375px] lg:h-[500px] lg:w-[375px] lg:min-w-[375px] xl:h-[560px] xl:w-[420px] xl:min-w-[420px]"
-                  fetchpriority="high"
-                  alt="Portrait of Sochetta Chhim"
-                  loading="eager"
-                  decoding="async"
-                />
+                <picture>
+                  <source
+                    type="image/webp"
+                    srcset="/images/Sochetta_Portrait.webp"
+                  />
+                  <img
+                    src="/images/Sochetta_Portrait.jpg"
+                    class="mx-auto block h-[350px] w-[262.50px] min-w-[262.50px] content-center rounded-bl-[57%] rounded-br-[41%] rounded-tl-[41%] rounded-tr-[57%] bg-imgBg sm:h-[400px] sm:w-[300px] sm:min-w-[300px] md:h-[500px] md:w-[375px] md:min-w-[375px] lg:h-[500px] lg:w-[375px] lg:min-w-[375px] xl:h-[560px] xl:w-[420px] xl:min-w-[420px]"
+                    fetchpriority="high"
+                    alt="Portrait of Sochetta Chhim"
+                    loading="eager"
+                    decoding="async"
+                  />
+                </picture>
                 <div class="mt-6 min-[820px]:mt-12">
                   <p class="pb-2 text-lg">Therapeutic Counseller</p>
                   <h3 class="font-NotoSerif text-3xl">Sochetta Chhim</h3>

@@ -157,7 +157,7 @@
                 srcset="
                   /images/grant-N90LM3A5AZQ-unsplash840x560.avif    640w,
                   /images/grant-N90LM3A5AZQ-unsplash1920x1280.avif 1920w,
-                  /images/grant-N90LM3A5AZQ-unsplash2400x1600.avif 2400w,
+                  /images/grant-N90LM3A5AZQ-unsplash2400x1600.avif 2400w
                 "
               />
               <source
@@ -261,14 +261,20 @@
               About Me
             </h2>
             <div class="flex flex-col px-6 py-4 md:px-14 min-[820px]:flex-row">
-              <img
-                src="/images/Sochetta_Portrait.jpg"
-                class="mx-auto block h-[350px] min-w-[262.50px] content-center rounded-bl-[57%] rounded-br-[41%] rounded-tl-[41%] rounded-tr-[57%] bg-imgBg sm:h-[400px] sm:min-w-[300px] md:h-[500px] md:min-w-[375px] lg:h-[500px] xl:h-[500px]"
-                fetchpriority="high"
-                alt="Portrait of Sochetta Chhim"
-                loading="lazy"
-                decoding="async"
-              />
+              <picture>
+                <source
+                  type="image/webp"
+                  srcset="/images/Sochetta_Portrait.webp"
+                />
+                <img
+                  src="/images/Sochetta_Portrait.jpg"
+                  class="mx-auto block h-[350px] min-w-[262.50px] content-center rounded-bl-[57%] rounded-br-[41%] rounded-tl-[41%] rounded-tr-[57%] bg-imgBg sm:h-[400px] sm:min-w-[300px] md:h-[500px] md:min-w-[375px] lg:h-[500px] xl:h-[500px]"
+                  fetchpriority="high"
+                  alt="Portrait of Sochetta Chhim"
+                  loading="lazy"
+                  decoding="async"
+                />
+              </picture>
               <div class="mt-6 flex-col min-[820px]:mt-12">
                 <p class="pb-2 text-lg">Therapeutic Counseller</p>
                 <h3 class="font-NotoSerif text-3xl">Sochetta Chhim</h3>
