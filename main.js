@@ -16,24 +16,21 @@ document.addEventListener("DOMContentLoaded", function () {
   const highQualityImage = document.getElementById("high-quality-hero-img");
 
   if (highQualityImage) {
-    // Check if the high-quality image has already loaded
+    // Check if high-quality image has already loaded
     if (!highQualityImage.complete) {
       highQualityImage.classList.add("opacity-0");
       highQualityImage.onload = function () {
-        // Hide placeholder after transition completes
-        highQualityImage.classList.remove("opacity-0");
+        // Hide placeholder after transition
         setTimeout(() => {
-          highQualityImage.style.opacity = 1;
+          highQualityImage.classList.remove("opacity-0");
         }, 300);
-        highQualityImage.style.opacity = 1;
       };
 
       highQualityImage.onerror = function () {
         console.error("High-quality image failed to load");
       };
     } else {
-      // If the image is already loaded, show it immediately
-      highQualityImage.style.opacity = 1;
+      // If already loaded, show immediately
       highQualityImage.classList.remove("opacity-0");
     }
   }
