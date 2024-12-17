@@ -4,7 +4,7 @@
 
 @layer base {
   html {
-    font-family: "Noto Serif", system-ui, sans-serif;
+    font-family: "Noto Serif", Georgia, serif, "Pontano Sans", Arial, sans-serif;
   }
 }
 

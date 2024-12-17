@@ -4,8 +4,8 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        PontanoSans: ["Pontano Sans"],
-        NotoSerif: ["Noto Serif"],
+        PontanoSans: ['Pontano Sans', 'Arial', 'sans-serif'],
+        NotoSerif: ['Noto Serif', 'Georgia', 'serif'],
       },
       textColor: {
         primary: "#3F4A49",
