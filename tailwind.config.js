@@ -4,8 +4,16 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        PontanoSans: ['Pontano Sans', 'Arial', 'sans-serif'],
-        NotoSerif: ['Noto Serif', 'Georgia', 'serif'],
+        CustomSans: ["ui-sans-serif", "system-ui", "sans-serif"],
+        CustomSerif: [
+          "Noto Serif",
+          "ui-serif",
+          "Georgia",
+          "Cambria",
+          "Times New Roman",
+          "Times",
+          "serif",
+        ],
       },
       textColor: {
         primary: "#3F4A49",
@@ -17,7 +25,7 @@ export default {
         roseAccent: "#D4967D",
         roseAccentHover: "#D5A48E",
         imgBg: "#e9e7e2",
-        directSection: "#DCD9D0"
+        directSection: "#DCD9D0",
       },
       keyframes: {
         fadeIn: {

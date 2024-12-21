@@ -3,15 +3,23 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script type="module" src="/main.js"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Pontano+Sans:wght@300..700&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="icon" type="image/x-icon" href="/images/favicon.ico" />
     <link rel="stylesheet" href="style.css" />
+    <link
+      rel="preload"
+      href="/public/fonts/subset-NotoSerif-Bold.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+    <link
+      rel="preload"
+      href="/public/fonts/subset-NotoSerif-Regular.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+    <link rel="icon" href="/public/images/favicon.ico" />
+    <script type="module" src="/main.js"></script>
     <title>SYC Counselling - Contact</title>
   </head>
   <body class="w-full leading-normal tracking-normal text-white">
@@ -27,13 +35,13 @@
       <div class="z-50 my-auto mr-[3vw] w-auto">
         <a
           href="/SYC/"
-          class="text-nowrap py-1 font-NotoSerif text-lg font-bold sm:text-xl md:text-2xl lg:text-2xl xl:text-3xl"
+          class="font-CustomSerif text-nowrap py-1 text-lg font-bold sm:text-xl md:text-2xl lg:text-2xl xl:text-3xl"
           >SYC Counselling</a
         >
       </div>
       <!-- Fullsize Nav -->
       <nav
-        class="flex w-full font-PontanoSans text-base xl:text-xl"
+        class="font-CustomSans flex w-full text-base xl:text-xl"
         aria-label="fullsize navigation menu"
       >
         <div class="my-auto hidden flex-row gap-1 md:gap-0 lg:flex xl:gap-3">
@@ -97,7 +105,7 @@
           <div class="mt-12 block">
             <a
               href="/SYC/book-appointment/"
-              class="mx-auto text-nowrap rounded-sm bg-roseAccent px-12 py-7 text-center font-PontanoSans text-lg tracking-wider text-white hover:opacity-85 sm:px-16"
+              class="font-CustomSans mx-auto text-nowrap rounded-sm bg-roseAccent px-12 py-7 text-center text-lg tracking-wider text-white hover:opacity-85 sm:px-16"
               >BOOK APPOINTMENT</a
             >
           </div>
@@ -110,10 +118,10 @@
         <!-- About Me Section -->
         <section class="mt-4 w-full pt-6 text-primary md:mt-8 md:pt-10">
           <div
-            class="mx-auto max-w-[1200px] font-PontanoSans text-xl lg:text-2xl"
+            class="font-CustomSans mx-auto max-w-[1200px] text-xl lg:text-2xl"
           >
             <h1
-              class="my-4 px-6 text-center font-NotoSerif text-4xl leading-tight md:px-14 md:pb-3 md:text-left md:text-5xl"
+              class="font-CustomSerif my-4 px-6 text-center text-4xl leading-tight md:px-14 md:pb-3 md:text-left md:text-5xl"
             >
               Contact us.
             </h1>
@@ -134,14 +142,14 @@
                 </div>
                 <!-- contact info cards container -->
                 <div
-                  class="grid w-full grid-cols-1 gap-8 px-6 md:grid-cols-2 xl:grid-cols-4"
+                  class="grid w-full grid-cols-1 gap-8 px-6 md:grid-cols-2 xl:grid-cols-4 xl:gap-7"
                 >
                   <div
                     class="transform overflow-hidden rounded-lg border shadow-md transition-all duration-300 ease-in-out hover:scale-105 hover:shadow-lg"
                   >
                     <div class="flex h-full flex-col">
                       <div class="flex-grow">
-                        <div class="relative p-6 pb-0">
+                        <div class="relative p-6 pb-0 xl:px-5">
                           <div class="mb-4 flex items-center">
                             <div class="rounded-full bg-darkGreen p-3">
                               <svg
@@ -169,13 +177,13 @@
                               </svg>
                             </div>
                             <h2
-                              class="ml-3 font-PontanoSans text-xl font-semibold text-gray-800"
+                              class="font-CustomSans ml-3 text-xl font-medium text-gray-800"
                             >
                               Email Us
                             </h2>
                           </div>
                           <p class="mb-4 text-gray-600">Send us an inquiry</p>
-                          <p class="mb-4 text-lg font-medium text-gray-800">
+                          <p class="mb-4 text-lg text-gray-800">
                             syc.counselling@gmail.com
                           </p>
                         </div>
@@ -194,7 +202,7 @@
                             stroke-width="2"
                             stroke-linecap="round"
                             stroke-linejoin="round"
-                            class="ml-1 h-4 w-4 transform transition-all duration-300 ease-in-out group-hover:translate-x-2"
+                            class="ml-1 h-5 w-5 transform transition-all duration-300 ease-in-out group-hover:translate-x-2"
                           >
                             <path d="M5 12h14"></path>
                             <path d="m12 5 7 7-7 7"></path></svg
@@ -207,7 +215,7 @@
                   >
                     <div class="flex h-full flex-col">
                       <div class="flex-grow">
-                        <div class="relative p-6 pb-0">
+                        <div class="relative p-6 pb-0 xl:px-5">
                           <div class="mb-4 flex items-center">
                             <div class="rounded-full bg-darkGreen p-3">
                               <svg
@@ -228,13 +236,13 @@
                               </svg>
                             </div>
                             <h2
-                              class="ml-3 font-PontanoSans text-xl font-semibold text-gray-800"
+                              class="font-CustomSans ml-3 text-xl font-medium text-gray-800"
                             >
                               Call Us
                             </h2>
                           </div>
                           <p class="mb-4 text-gray-600">Speak with our team</p>
-                          <p class="mb-4 text-lg font-medium text-gray-800">
+                          <p class="mb-4 text-lg text-gray-800">
                             0468 410 462
                           </p>
                         </div>
@@ -253,7 +261,7 @@
                             stroke-width="2"
                             stroke-linecap="round"
                             stroke-linejoin="round"
-                            class="ml-1 h-4 w-4 transform transition-all duration-300 ease-in-out group-hover:translate-x-2"
+                            class="ml-1 h-5 w-5 transform transition-all duration-300 ease-in-out group-hover:translate-x-2"
                           >
                             <path d="M5 12h14"></path>
                             <path d="m12 5 7 7-7 7"></path>
@@ -267,7 +275,7 @@
                   >
                     <div class="flex h-full flex-col">
                       <div class="flex-grow">
-                        <div class="relative p-6 pb-1">
+                        <div class="relative p-6 pb-1 xl:px-5">
                           <div class="mb-4 flex items-center">
                             <div class="rounded-full bg-darkGreen p-3">
                               <svg
@@ -293,13 +301,13 @@
                               </svg>
                             </div>
                             <h2
-                              class="ml-3 font-PontanoSans text-xl font-semibold text-gray-800"
+                              class="font-CustomSans ml-3 text-xl font-medium text-gray-800"
                             >
                               PO Box
                             </h2>
                           </div>
                           <p class="mb-4 text-gray-600">Send us mail</p>
-                          <p class="mb-4 text-lg font-medium text-gray-800">
+                          <p class="mb-4 text-lg text-gray-800">
                             PO Box 5079, Cranbourne, VIC 3977
                           </p>
                         </div>
@@ -311,7 +319,7 @@
                   >
                     <div class="flex h-full flex-col">
                       <div class="flex-grow">
-                        <div class="relative p-6 pb-1">
+                        <div class="relative p-6 pb-1 xl:px-5">
                           <div class="mb-4 flex items-center">
                             <div class="rounded-full bg-darkGreen p-3">
                               <svg
@@ -331,16 +339,16 @@
                               </svg>
                             </div>
                             <h2
-                              class="ml-3 font-PontanoSans text-xl font-semibold text-gray-800"
+                              class="font-CustomSans ml-3 text-xl font-medium text-gray-800"
                             >
                               Business Hours
                             </h2>
                           </div>
                           <p class="mb-4 text-gray-600">When we're available</p>
-                          <p class="mb-1 text-lg font-medium text-gray-800">
+                          <p class="mb-1 text-lg text-gray-800">
                             Wednesday & Saturday: 7am - 5pm
                           </p>
-                          <p class="mb-4 text-lg font-medium text-gray-800">
+                          <p class="mb-4 text-lg text-gray-800">
                             Other Weekdays after 5:30pm
                           </p>
                         </div>
@@ -355,10 +363,10 @@
         <!-- Direct to 'FAQ' Section -->
         <section class="mt-8 w-full bg-directSection pb-12 text-primary">
           <div
-            class="mx-auto max-w-[1200px] pb-1 pt-10 font-PontanoSans text-xl lg:text-2xl"
+            class="font-CustomSans mx-auto max-w-[1200px] pb-1 pt-10 text-xl lg:text-2xl"
           >
             <h2
-              class="my-4 text-center font-NotoSerif text-4xl leading-tight md:pb-3 md:text-5xl"
+              class="font-CustomSerif my-4 text-center text-4xl leading-tight md:pb-3 md:text-5xl"
             >
               Checked our FAQ?
             </h2>
@@ -371,7 +379,7 @@
             </div>
             <a
               href="/SYC/faq/"
-              class="mx-auto block w-fit rounded-sm bg-roseAccent px-8 py-4 text-center font-NotoSerif text-white hover:bg-roseAccentHover lg:px-16"
+              class="font-CustomSerif mx-auto block w-fit rounded-sm bg-roseAccent px-8 py-4 text-center text-white hover:bg-roseAccentHover lg:px-16"
               >FAQs</a
             >
           </div>
@@ -381,7 +389,7 @@
     <!-- Footer -->
     <footer>
       <section
-        class="mt-8 flex w-full flex-row justify-evenly overflow-hidden pt-5 font-PontanoSans text-primary lg:pt-12"
+        class="font-CustomSans mt-8 flex w-full flex-row justify-evenly overflow-hidden pt-5 text-primary lg:pt-12"
       >
         <div class="w-full max-w-[1200px] px-6 text-xl md:px-14">
           <a
@@ -442,7 +450,7 @@
                 xmlns:xlink="http://www.w3.org/1999/xlink"
                 viewBox="0 0 310 310"
                 xml:space="preserve"
-                class="hover:opacity-80"
+                class="hover:opacity-80 mt-[1px]"
               >
                 <g id="XMLID_801_">
                   <path
@@ -466,10 +474,10 @@
               </svg>
             </a>
             <p class="pl-7 text-lg">
-              <span class="font-bold">ABN</span> 19 305 455 392
+              <span class="font-semibold">ABN</span> 19 305 455 392
             </p>
           </div>
-          <div class="mb-2 mt-14 text-center text-base font-medium">
+          <div class="mb-2 mt-14 text-center text-base">
             <a
               target="_blank"
               href="https://www.linkedin.com/in/matthew-bradbury-685ab8117/"

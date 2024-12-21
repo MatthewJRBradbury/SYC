@@ -3,15 +3,23 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script type="module" src="/main.js"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Pontano+Sans:wght@300..700&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="icon" type="image/x-icon" href="/images/favicon.ico" />
     <link rel="stylesheet" href="style.css" />
+    <link
+      rel="preload"
+      href="/public/fonts/subset-NotoSerif-Bold.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+    <link
+      rel="preload"
+      href="/public/fonts/subset-NotoSerif-Regular.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+    <link rel="icon" href="/public/images/favicon.ico" />
+    <script type="module" src="/main.js"></script>
     <title>SYC Counselling - FAQ</title>
   </head>
   <body class="w-full leading-normal tracking-normal text-white">
@@ -27,13 +35,13 @@
       <div class="z-50 my-auto mr-[3vw] w-auto">
         <a
           href="/SYC/"
-          class="text-nowrap py-1 font-NotoSerif text-lg font-bold sm:text-xl md:text-2xl lg:text-2xl xl:text-3xl"
+          class="text-nowrap py-1 font-CustomSerif text-lg font-bold sm:text-xl md:text-2xl lg:text-2xl xl:text-3xl"
           >SYC Counselling</a
         >
       </div>
       <!-- Fullsize Nav -->
       <nav
-        class="flex w-full font-PontanoSans text-base xl:text-xl"
+        class="flex w-full font-CustomSans text-base xl:text-xl"
         aria-label="fullsize navigation menu"
       >
         <div class="my-auto hidden flex-row gap-1 md:gap-0 lg:flex xl:gap-3">
@@ -101,7 +109,7 @@
           <div class="mt-12 block">
             <a
               href="/SYC/book-appointment/"
-              class="mx-auto text-nowrap rounded-sm bg-roseAccent px-12 py-7 text-center font-PontanoSans text-lg tracking-wider text-white hover:opacity-85 sm:px-16"
+              class="mx-auto text-nowrap rounded-sm bg-roseAccent px-12 py-7 text-center font-CustomSans text-lg tracking-wider text-white hover:opacity-85 sm:px-16"
               >BOOK APPOINTMENT</a
             >
           </div>
@@ -114,71 +122,69 @@
         <!-- FAQ Section -->
         <section class="mt-4 w-full pt-6 text-primary md:mt-8 md:pt-10">
           <div
-            class="mx-auto max-w-[1200px] font-PontanoSans text-xl lg:text-2xl"
+            class="mx-auto max-w-[1200px] font-CustomSans text-xl lg:text-2xl"
           >
             <h1
-              class="my-4 px-6 text-center font-NotoSerif text-4xl leading-tight md:px-14 md:pb-3 md:text-left md:text-5xl"
+              class="my-4 px-6 text-center font-CustomSerif text-4xl leading-tight md:px-14 md:pb-3 md:text-left md:text-5xl"
             >
               FAQs
             </h1>
             <div class="my-16">
               <h2
-                class="my-4 px-6 font-NotoSerif text-2xl leading-tight md:px-14 md:pb-3 lg:text-3xl"
+                class="my-4 px-6 font-CustomSerif text-2xl leading-tight md:px-14 md:pb-3 lg:text-3xl"
               >
                 How do I book an appointment?
               </h2>
-              <h3 class="px-8 font-NotoSerif md:px-20">New Clients:</h3>
+              <h3 class="px-8 font-CustomSerif md:px-20">New Clients:</h3>
               <p class="px-10 py-3 leading-[1.8em] md:px-24">
-                To make a booking as a new client you will need to
+                As a new client, you will need to
                 <a
-                  class="font-bold text-roseAccent underline hover:text-roseAccentHover"
+                  class="font-semibold text-roseAccent underline hover:text-roseAccentHover"
                   href="/SYC/contact/"
                   >contact us</a
                 >
-                first before being able to book online.
+                to book your first session.  
               </p>
-              <h3 class="px-8 font-NotoSerif md:px-20">Existing Clients:</h3>
+              <h3 class="px-8 font-CustomSerif md:px-20">Existing Clients:</h3>
               <p class="px-10 py-3 leading-[1.8em] md:px-24">
-                As an existing client in addition to contacting us directly to
-                book an appointment you also have the option to book directly
-                online
+                Existing clients can book appointments by either contacting us directly or utilising our
                 <a
-                  class="font-bold text-roseAccent underline hover:text-roseAccentHover"
+                  class="font-semibold text-roseAccent underline hover:text-roseAccentHover"
                   href="/SYC/book-appointment/"
                   >Online Booking</a
-                >.
+                > option.
               </p>
             </div>
             <div class="my-16">
               <h2
-                class="my-4 px-6 font-NotoSerif text-2xl leading-tight md:px-14 md:pb-3 lg:text-3xl"
+                class="my-4 px-6 font-CustomSerif text-2xl leading-tight md:px-14 md:pb-3 lg:text-3xl"
               >
                 Do you have a cancellation fee?
               </h2>
               <p class="px-8 py-3 leading-[1.8em] md:px-24">
                 Yes we do, if an appointment is not cancelled at least 24 hours
                 prior to appointment time a fee of up to 50% of the appointment
-                cost will be charged.
+                cost may be charged.
               </p>
             </div>
             <div class="my-16">
               <h2
-                class="my-4 px-6 font-NotoSerif text-2xl leading-tight md:px-14 md:pb-3 lg:text-3xl"
+                class="my-4 px-6 font-CustomSerif text-2xl leading-tight md:px-14 md:pb-3 lg:text-3xl"
               >
                 How should I prepare for my session?
               </h2>
               <p class="px-8 py-3 leading-[1.8em] md:px-24">
                 Since our service is Telehealth only, it is recommended to make
-                sure you have access to a <strong>quiet</strong> and
-                <strong>private</strong> space at the time of your appointment.
-                Access to a phone with <strong>reliable reception</strong> or a
-                device with a <strong>reliable internet</strong> connection for
+                sure you have access to a <span class="font-semibold">quiet</span> and
+                <span class="font-semibold">private</span> space at the time of your appointment.
+                Access to a phone with <span class="font-semibold">reliable reception</span> or a
+                device with a <span class="font-semibold">reliable internet</span> connection for
                 video sessions is also a must.
               </p>
             </div>
             <div class="my-16" id="crisis">
               <h2
-                class="my-4 px-6 font-NotoSerif text-2xl leading-tight md:px-14 md:pb-3 lg:text-3xl"
+                class="my-4 px-6 font-CustomSerif text-2xl leading-tight md:px-14 md:pb-3 lg:text-3xl"
               >
                 Do you provide crisis services?
               </h2>
@@ -190,47 +196,47 @@
               <ul class="list-disc px-16 leading-[1.8em] md:px-36">
                 <li>
                   <p class="leading-[1.8em]">
-                    <strong>Lifeline</strong> on
+                    <span class="font-semibold">Lifeline</span> on
                     <a
                       href="tel:131114"
-                      class="font-bold text-roseAccent underline hover:text-roseAccentHover"
+                      class="font-semibold text-roseAccent underline hover:text-roseAccentHover"
                       >13 11 14</a
                     >
                   </p>
                 </li>
                 <li>
                   <p class="leading-[1.8em]">
-                    <strong>Kids Helpline</strong> on
+                    <span class="font-semibold">Kids Helpline</span> on
                     <a
                       href="tel:1800551800"
-                      class="font-bold text-roseAccent underline hover:text-roseAccentHover"
+                      class="font-semibold text-roseAccent underline hover:text-roseAccentHover"
                       >1800 55 1800</a
                     >
                   </p>
                 </li>
               </ul>
-              <p class="px-8 pb-3 font-bold leading-[1.8em] md:px-24">
+              <p class="px-8 pb-3 font-semibold leading-[1.8em] md:px-24">
                 For Immediate emergencys, please call
                 <a
                   href="tel:000"
-                  class="font-bold text-roseAccent underline hover:text-roseAccentHover"
+                  class="font-semibold text-roseAccent underline hover:text-roseAccentHover"
                   >000</a
                 >.
               </p>
               <p class="px-8 pb-3 leading-[1.8em] md:px-24">
                 For Support with domestic / family violence or sexual assault
                 please contact local law enforcement or contact
-                <strong>1800RESPECT</strong> on
+                <span class="font-semibold">1800RESPECT</span> on
                 <a
                   href="tel:1800737732"
-                  class="font-bold text-roseAccent underline hover:text-roseAccentHover"
+                  class="font-semibold text-roseAccent underline hover:text-roseAccentHover"
                   >1800 737 732</a
                 >.
               </p>
             </div>
             <div class="my-16">
               <h2
-                class="my-4 px-6 font-NotoSerif text-2xl leading-tight md:px-14 md:pb-3 lg:text-3xl"
+                class="my-4 px-6 font-CustomSerif text-2xl leading-tight md:px-14 md:pb-3 lg:text-3xl"
               >
                 Do you offer Medicare rebates?
               </h2>
@@ -242,7 +248,7 @@
             </div>
             <div class="my-16">
               <h2
-                class="my-4 px-6 font-NotoSerif text-2xl leading-tight md:px-14 md:pb-3 lg:text-3xl"
+                class="my-4 px-6 font-CustomSerif text-2xl leading-tight md:px-14 md:pb-3 lg:text-3xl"
               >
                 Got a Question about Services, Fees or insurance?
               </h2>
@@ -261,10 +267,10 @@
         <!-- Direct to 'Contact Us' Section -->
         <section class="mt-8 w-full bg-directSection pb-12 text-primary">
           <div
-            class="mx-auto max-w-[1200px] pb-1 pt-10 font-PontanoSans text-xl lg:text-2xl"
+            class="mx-auto max-w-[1200px] pb-1 pt-10 font-CustomSans text-xl lg:text-2xl"
           >
             <h2
-              class="my-4 text-center font-NotoSerif text-4xl leading-tight md:pb-3 md:text-5xl"
+              class="my-4 text-center font-CustomSerif text-4xl leading-tight md:pb-3 md:text-5xl"
             >
               Question not Answered?
             </h2>
@@ -277,7 +283,7 @@
             </div>
             <a
               href="/SYC/contact/"
-              class="mx-auto block w-fit rounded-sm bg-roseAccent px-8 py-4 text-center font-NotoSerif text-white hover:bg-roseAccentHover lg:px-16"
+              class="mx-auto block w-fit rounded-sm bg-roseAccent px-8 py-4 text-center font-CustomSerif text-white hover:bg-roseAccentHover lg:px-16"
               >Contact Us</a
             >
           </div>
@@ -287,7 +293,7 @@
     <!-- Footer -->
     <footer>
       <section
-        class="mt-8 flex w-full flex-row justify-evenly overflow-hidden pt-5 font-PontanoSans text-primary lg:pt-12"
+        class="mt-8 flex w-full flex-row justify-evenly overflow-hidden pt-5 font-CustomSans text-primary lg:pt-12"
       >
         <div class="w-full max-w-[1200px] px-6 text-xl md:px-14">
           <a
@@ -348,7 +354,7 @@
                 xmlns:xlink="http://www.w3.org/1999/xlink"
                 viewBox="0 0 310 310"
                 xml:space="preserve"
-                class="hover:opacity-80"
+                class="hover:opacity-80 mt-[1px]"
               >
                 <g id="XMLID_801_">
                   <path
@@ -372,10 +378,10 @@
               </svg>
             </a>
             <p class="pl-7 text-lg">
-              <span class="font-bold">ABN</span> 19 305 455 392
+              <span class="font-semibold">ABN</span> 19 305 455 392
             </p>
           </div>
-          <div class="mb-2 mt-14 text-center text-base font-medium">
+          <div class="mb-2 mt-14 text-center text-base">
             <a
               target="_blank"
               href="https://www.linkedin.com/in/matthew-bradbury-685ab8117/"

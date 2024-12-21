@@ -4,7 +4,8 @@
 
 @layer base {
   html {
-    font-family: "Noto Serif", Georgia, serif, "Pontano Sans", Arial, sans-serif;
+    font-family: "Noto Serif", ui-serif, Georgia, Cambria, "Times New Roman",
+      Times, serif, ui-sans-serif, sans-serif, system-ui;
   }
 }
 
@@ -12,4 +13,21 @@
   .hamburger-toggle {
     @apply [&>div]:h-0 [&>div]:bg-white [&>div]:before:translate-y-0 [&>div]:before:rotate-45 [&>div]:after:translate-y-0 [&>div]:after:-rotate-45;
   }
+}
+
+@font-face {
+  font-family: "Noto Serif";
+  font-style: normal;
+  font-weight: 400;
+  font-stretch: 100%;
+  font-display: optional;
+  src: url("/public/fonts/subset-NotoSerif-Regular.woff2") format("woff2");
+}
+@font-face {
+  font-family: "Noto Serif";
+  font-style: normal;
+  font-weight: 700;
+  font-stretch: 100%;
+  font-display: optional;
+  src: url("/public/fonts/subset-NotoSerif-Bold.woff2") format("woff2");
 }
