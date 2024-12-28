@@ -22,10 +22,10 @@
     <script type="module" src="/main.js"></script>
     <title>SYC Counselling - Contact</title>
   </head>
-  <body class="w-full leading-normal tracking-normal text-white">
+  <body class="w-full min-w-80 leading-normal tracking-normal text-white">
     <header
       id="header"
-      class="text-primary-foreground absolute z-10 flex w-full items-center bg-darkGreen px-6 py-6 leading-none shadow-[rgba(0,0,15,0.15)_0px_5px_5px_0px] sm:justify-between md:py-8 md:pl-8 md:pr-12 lg:items-baseline lg:justify-normal lg:py-5 lg:pl-12 xl:pl-14 2xl:px-24"
+      class="text-primary-foreground absolute z-10 flex w-full min-w-80 items-center bg-darkGreen px-6 py-6 leading-none shadow-[rgba(0,0,15,0.15)_0px_5px_5px_0px] sm:justify-between md:py-8 md:pl-8 md:pr-12 lg:items-baseline lg:justify-normal lg:py-5 lg:pl-12 xl:pl-14 2xl:px-24"
     >
       <a
         href="#main"
@@ -35,13 +35,13 @@
       <div class="z-50 my-auto mr-[3vw] w-auto">
         <a
           href="/SYC/"
-          class="font-CustomSerif text-nowrap py-1 text-lg font-bold sm:text-xl md:text-2xl lg:text-2xl xl:text-3xl"
+          class="text-nowrap py-1 font-CustomSerif text-lg font-bold sm:text-xl md:text-2xl lg:text-2xl xl:text-3xl"
           >SYC Counselling</a
         >
       </div>
       <!-- Fullsize Nav -->
       <nav
-        class="font-CustomSans flex w-full text-base xl:text-xl"
+        class="flex w-full font-CustomSans text-base xl:text-xl"
         aria-label="fullsize navigation menu"
       >
         <div class="my-auto hidden flex-row gap-1 md:gap-0 lg:flex xl:gap-3">
@@ -75,7 +75,7 @@
       <!-- Burger Menu Overlay -->
       <div
         id="mobile-nav-menu"
-        class="fixed left-0 top-0 hidden h-lvh w-full animate-fadeIn overflow-x-hidden bg-darkGreen lg:hidden"
+        class="bm:overflow-x-hidden fixed left-0 top-0 hidden h-lvh w-full animate-fadeIn overflow-x-scroll bg-darkGreen lg:hidden"
       >
         <nav
           class="relative top-1/4 w-full text-center"
@@ -105,7 +105,7 @@
           <div class="mt-12 block">
             <a
               href="/SYC/book-appointment/"
-              class="font-CustomSans mx-auto text-nowrap rounded-sm bg-roseAccent px-12 py-7 text-center text-lg tracking-wider text-white hover:opacity-85 sm:px-16"
+              class="mx-auto text-nowrap rounded-sm bg-roseAccent px-12 py-7 text-center font-CustomSans text-lg tracking-wider text-white hover:opacity-85 sm:px-16"
               >BOOK APPOINTMENT</a
             >
           </div>
@@ -115,13 +115,13 @@
     <main>
       <!-- main content area -->
       <div id="main" class="mx-auto pt-24">
-        <!-- About Me Section -->
+        <!-- Contact Us Section -->
         <section class="mt-4 w-full pt-6 text-primary md:mt-8 md:pt-10">
           <div
-            class="font-CustomSans mx-auto max-w-[1200px] text-xl lg:text-2xl"
+            class="mx-auto max-w-[1200px] font-CustomSans text-xl lg:text-2xl"
           >
             <h1
-              class="font-CustomSerif my-4 px-6 text-center text-4xl leading-tight md:px-14 md:pb-3 md:text-left md:text-5xl"
+              class="my-4 px-6 text-center font-CustomSerif text-4xl leading-tight md:px-14 md:pb-3 md:text-left md:text-5xl"
             >
               Contact us.
             </h1>
@@ -177,7 +177,7 @@
                               </svg>
                             </div>
                             <h2
-                              class="font-CustomSans ml-3 text-xl font-medium text-gray-800"
+                              class="ml-3 font-CustomSans text-xl font-medium text-gray-800"
                             >
                               Email Us
                             </h2>
@@ -236,15 +236,13 @@
                               </svg>
                             </div>
                             <h2
-                              class="font-CustomSans ml-3 text-xl font-medium text-gray-800"
+                              class="ml-3 font-CustomSans text-xl font-medium text-gray-800"
                             >
                               Call Us
                             </h2>
                           </div>
                           <p class="mb-4 text-gray-600">Speak with our team</p>
-                          <p class="mb-4 text-lg text-gray-800">
-                            0468 410 462
-                          </p>
+                          <p class="mb-4 text-lg text-gray-800">0468 410 462</p>
                         </div>
                       </div>
                       <div class="mb-4 px-6 pb-1 pt-0">
@@ -301,7 +299,7 @@
                               </svg>
                             </div>
                             <h2
-                              class="font-CustomSans ml-3 text-xl font-medium text-gray-800"
+                              class="ml-3 font-CustomSans text-xl font-medium text-gray-800"
                             >
                               PO Box
                             </h2>
@@ -339,7 +337,7 @@
                               </svg>
                             </div>
                             <h2
-                              class="font-CustomSans ml-3 text-xl font-medium text-gray-800"
+                              class="ml-3 font-CustomSans text-xl font-medium text-gray-800"
                             >
                               Business Hours
                             </h2>
@@ -363,10 +361,10 @@
         <!-- Direct to 'FAQ' Section -->
         <section class="mt-8 w-full bg-directSection pb-12 text-primary">
           <div
-            class="font-CustomSans mx-auto max-w-[1200px] pb-1 pt-10 text-xl lg:text-2xl"
+            class="mx-auto max-w-[1200px] pb-1 pt-10 font-CustomSans text-xl lg:text-2xl"
           >
             <h2
-              class="font-CustomSerif my-4 text-center text-4xl leading-tight md:pb-3 md:text-5xl"
+              class="mx-2 my-4 text-center font-CustomSerif text-4xl leading-tight md:pb-3 md:text-5xl"
             >
               Checked our FAQ?
             </h2>
@@ -379,7 +377,7 @@
             </div>
             <a
               href="/SYC/faq/"
-              class="font-CustomSerif mx-auto block w-fit rounded-sm bg-roseAccent px-8 py-4 text-center text-white hover:bg-roseAccentHover lg:px-16"
+              class="mx-auto block w-fit rounded-sm bg-roseAccent px-8 py-4 text-center font-CustomSerif text-white hover:bg-roseAccentHover lg:px-16"
               >FAQs</a
             >
           </div>
@@ -389,7 +387,7 @@
     <!-- Footer -->
     <footer>
       <section
-        class="font-CustomSans mt-8 flex w-full flex-row justify-evenly overflow-hidden pt-5 text-primary lg:pt-12"
+        class="mt-8 flex w-full flex-row justify-evenly overflow-hidden pt-5 font-CustomSans text-primary lg:pt-12"
       >
         <div class="w-full max-w-[1200px] px-6 text-xl md:px-14">
           <a
@@ -450,7 +448,7 @@
                 xmlns:xlink="http://www.w3.org/1999/xlink"
                 viewBox="0 0 310 310"
                 xml:space="preserve"
-                class="hover:opacity-80 mt-[1px]"
+                class="mt-[1px] hover:opacity-80"
               >
                 <g id="XMLID_801_">
                   <path

@@ -41,6 +41,10 @@ export default {
         fadeIn: "fadeIn .25s ease-in",
         fadeOut: "fadeOut .25s ease-out",
       },
+      screens: {
+        xs: "320px",
+        bm: "285px" // burger menu
+      },
     },
   },
   plugins: [require("@tailwindcss/typography")],
