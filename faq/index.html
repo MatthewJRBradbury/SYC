@@ -35,6 +35,7 @@
       <div class="z-50 my-auto mr-[3vw] w-auto">
         <a
           href="/SYC/"
+          aria-label="Logo - Home page"
           class="text-nowrap py-1 font-CustomSerif text-lg font-bold sm:text-xl md:text-2xl lg:text-2xl xl:text-3xl"
           >SYC Counselling</a
         >
@@ -67,6 +68,8 @@
       <button
         id="mobile-nav-toggle"
         class="z-50 h-7 cursor-pointer place-content-center p-3 lg:hidden"
+        aria-expanded="false"
+        aria-label="Mobile navigation toggle"
       >
         <div
           class="grid h-0.5 w-7 rounded-full bg-white transition-all duration-150 before:absolute before:h-0.5 before:w-7 before:-translate-y-1.5 before:rounded-full before:bg-white before:transition-all before:duration-150 before:content-[''] after:absolute after:h-0.5 after:w-7 after:translate-y-1.5 after:rounded-full after:bg-white after:transition-all after:duration-150 after:content-['']"
@@ -75,7 +78,7 @@
       <!-- Burger Menu Overlay -->
       <div
         id="mobile-nav-menu"
-        class="bm:overflow-x-hidden fixed left-0 top-0 hidden h-lvh w-full animate-fadeIn overflow-x-scroll bg-darkGreen lg:hidden"
+        class="fixed left-0 top-0 hidden h-lvh w-full animate-fadeIn overflow-x-scroll bg-darkGreen bm:overflow-x-hidden lg:hidden"
       >
         <nav
           class="relative top-1/4 w-full text-center"
@@ -205,6 +208,7 @@
                     <a
                       href="tel:131114"
                       class="font-semibold text-roseAccent underline hover:text-roseAccentHover"
+                      aria-label="13 11 14, will open phone call app"
                       >13 11 14</a
                     >
                   </p>
@@ -215,6 +219,7 @@
                     <a
                       href="tel:1800551800"
                       class="font-semibold text-roseAccent underline hover:text-roseAccentHover"
+                      aria-label="1800 55 1800, will open phone call app"
                       >1800 55 1800</a
                     >
                   </p>
@@ -225,6 +230,7 @@
                 <a
                   href="tel:000"
                   class="font-semibold text-roseAccent underline hover:text-roseAccentHover"
+                  aria-label="000, will open phone call app"
                   >000</a
                 >.
               </p>
@@ -235,6 +241,7 @@
                 <a
                   href="tel:1800737732"
                   class="font-semibold text-roseAccent underline hover:text-roseAccentHover"
+                  aria-label="1800 737 732, will open phone call app"
                   >1800 737 732</a
                 >.
               </p>
@@ -348,6 +355,7 @@
             <a
               href="https://www.linkedin.com/in/sochetta-chhim-a03290277"
               target="_blank"
+              aria-label="Therapist Sochetta Chhim's LinkedIn Page (Opens in new tab)"
             >
               <svg
                 fill="#4E4E4E"
@@ -360,6 +368,7 @@
                 viewBox="0 0 310 310"
                 xml:space="preserve"
                 class="mt-[1px] hover:opacity-80"
+                aria-hidden="true"
               >
                 <g id="XMLID_801_">
                   <path
@@ -386,13 +395,18 @@
               <span class="font-semibold">ABN</span> 19 305 455 392
             </p>
           </div>
-          <div class="mb-2 mt-14 text-center text-base">
+          <div
+            class="mb-2 mt-14 flex flex-col justify-center gap-1 text-center text-base sm:flex-row"
+          >
+            <p aria-label="© 2025 SYC Counselling.">
+              © 2025 SYC Counselling.
+            </p>
             <a
               target="_blank"
               href="https://www.linkedin.com/in/matthew-bradbury-685ab8117/"
               class="underline hover:opacity-80"
-              aria-label="Copyright message and link to Web Developer's LinkedIn page"
-              >MJRB © Copyright 2024.</a
+              aria-label="Developed by MJRB. View Web Developer's LinkedIn profile (Opens in new tab)"
+              >Developed by MJRB.</a
             >
           </div>
         </div>

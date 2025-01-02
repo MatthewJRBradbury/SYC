@@ -4,7 +4,6 @@ import "./style.css";
 // For click event and also reference for outer div tag
 const toggleMenu = document.querySelector("#mobile-nav-toggle");
 const mobileMenuScreen = document.querySelector("#mobile-nav-menu");
-const firstLink = mobileMenuScreen.querySelector("nav a:first-of-type");
 const lastLink = mobileMenuScreen.querySelector("nav div a:last-of-type");
 const body = document.body;
 
