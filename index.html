@@ -48,6 +48,7 @@
       <div class="z-50 my-auto mr-[3vw] w-auto">
         <a
           href="/SYC/"
+          aria-label="Logo - Home page"
           class="text-nowrap py-1 font-CustomSerif text-lg font-bold sm:text-xl md:text-2xl lg:text-2xl xl:text-3xl"
           >SYC Counselling</a
         >
@@ -80,6 +81,8 @@
       <button
         id="mobile-nav-toggle"
         class="z-50 h-7 cursor-pointer place-content-center p-3 lg:hidden"
+        aria-expanded="false"
+        aria-label="Mobile navigation toggle"
       >
         <div
           class="grid h-0.5 w-7 rounded-full bg-white transition-all duration-150 before:absolute before:h-0.5 before:w-7 before:-translate-y-1.5 before:rounded-full before:bg-white before:transition-all before:duration-150 before:content-[''] after:absolute after:h-0.5 after:w-7 after:translate-y-1.5 after:rounded-full after:bg-white after:transition-all after:duration-150 after:content-['']"
@@ -88,7 +91,7 @@
       <!-- Burger Menu Overlay -->
       <div
         id="mobile-nav-menu"
-        class="bm:overflow-x-hidden fixed left-0 top-0 hidden h-lvh w-full animate-fadeIn overflow-x-scroll bg-darkGreen lg:hidden"
+        class="fixed left-0 top-0 hidden h-lvh w-full animate-fadeIn overflow-x-scroll bg-darkGreen bm:overflow-x-hidden lg:hidden"
       >
         <nav
           class="relative top-1/4 w-full text-center"
@@ -139,6 +142,7 @@
           >
             <h1
               class="my-4 font-CustomSerif text-4xl font-bold leading-tight md:text-5xl"
+              aria-label="SYC Counselling"
             >
               SYCounselling
             </h1>
@@ -149,13 +153,15 @@
           </div>
         </div>
         <!-- Hero Image -->
-        <div class="pointer-events-none absolute inset-0 h-min overflow-hidden min-w-80">
+        <div
+          class="pointer-events-none absolute inset-0 h-min min-w-80 overflow-hidden"
+        >
           <div
             class="relative z-[-20] h-svh max-h-[1600px] min-h-[600px] w-full lg:h-[700px]"
           >
             <img
               src="/images/placeholder.jpg"
-              alt="lady on a couch placeholder"
+              alt=""
               class="absolute inset-0 z-[-10] h-full w-full object-cover object-bottom blur-lg"
               id="placeholder-hero-image"
             />
@@ -190,7 +196,7 @@
                 width="2400"
                 height="1600"
                 sizes="(max-width: 799px) 200vw, 100vw"
-                alt="lady on a couch"
+                alt=""
                 fetchpriority="high"
                 loading="eager"
                 decoding="async"
@@ -255,6 +261,7 @@
             <a
               href="/SYC/services/"
               class="mx-auto block w-fit rounded-sm bg-roseAccent px-8 py-4 text-center font-CustomSerif text-white hover:bg-roseAccentHover lg:px-16"
+              aria-label="Learn more about our services and fees"
               >Learn More</a
             >
           </div>
@@ -306,6 +313,7 @@
             <a
               href="/SYC/about-me/"
               class="mx-auto block w-fit rounded-sm bg-roseAccent px-8 py-4 text-center font-CustomSerif text-white hover:bg-roseAccentHover lg:px-16"
+              aria-label="Learn more about Sochetta Chhim"
               >Learn More</a
             >
           </div>
@@ -382,7 +390,7 @@
             <a
               href="https://www.linkedin.com/in/sochetta-chhim-a03290277"
               target="_blank"
-              aria-label="Therapist Sochetta Chhim's LinkedIn Page"
+              aria-label="Therapist Sochetta Chhim's LinkedIn Page (Opens in new tab)"
             >
               <svg
                 fill="#4E4E4E"
@@ -421,13 +429,18 @@
               <span class="font-semibold">ABN</span> 19 305 455 392
             </p>
           </div>
-          <div class="mb-2 mt-14 text-center text-base">
+          <div
+            class="mb-2 mt-14 flex flex-col justify-center gap-1 text-center text-base sm:flex-row"
+          >
+            <p aria-label="© 2025 SYC Counselling.">
+              © 2025 SYC Counselling.
+            </p>
             <a
               target="_blank"
               href="https://www.linkedin.com/in/matthew-bradbury-685ab8117/"
               class="underline hover:opacity-80"
-              aria-label="Copyright message and link to Web Developer's LinkedIn page"
-              >MJRB © Copyright 2024.</a
+              aria-label="Developed by MJRB. View Web Developer's LinkedIn profile (Opens in new tab)"
+              >Developed by MJRB.</a
             >
           </div>
         </div>

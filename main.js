@@ -4,13 +4,39 @@ import "./style.css";
 // For click event and also reference for outer div tag
 const toggleMenu = document.querySelector("#mobile-nav-toggle");
 const mobileMenuScreen = document.querySelector("#mobile-nav-menu");
+const firstLink = mobileMenuScreen.querySelector("nav a:first-of-type");
+const lastLink = mobileMenuScreen.querySelector("nav div a:last-of-type");
 const body = document.body;
 
 toggleMenu.onclick = () => {
+  toggleMobileMenu();
+};
+
+const toggleMobileMenu = () => {
   toggleMenu.classList.toggle("hamburger-toggle");
+  toggleMenu.setAttribute(
+    "aria-expanded",
+    toggleMenu.getAttribute("aria-expanded") === "true" ? "false" : "true",
+  );
   mobileMenuScreen.classList.toggle("hidden");
   body.classList.toggle("fixed");
 };
+
+mobileMenuScreen.addEventListener("keydown", (event) => {
+  if (
+    ((event.key === "Tab" && !event.shiftKey) ||
+      event.key === "ArrowDown" ||
+      event.key === "ArrowUp") &&
+    document.activeElement === lastLink
+  ) {
+    event.preventDefault();
+    toggleMenu.focus();
+  }
+  if (event.key === "Escape") {
+    toggleMobileMenu();
+    
+  }
+});
 
 document.addEventListener("DOMContentLoaded", function () {
   const highQualityImage = document.getElementById("high-quality-hero-img");
