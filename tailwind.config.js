@@ -24,6 +24,7 @@ export default {
       colors: {
         roseAccent: "#D4967D",
         roseAccentHover: "#D5A48E",
+        roseText: "#be8670",
         imgBg: "#e9e7e2",
         directSection: "#DCD9D0",
         darkGreen: "#495A58",
@@ -44,7 +45,7 @@ export default {
       },
       screens: {
         xs: "320px",
-        bm: "285px" // burger menu
+        bm: "285px", // burger menu
       },
     },
   },
