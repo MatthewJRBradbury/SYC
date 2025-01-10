@@ -12,7 +12,6 @@ toggleMenu.onclick = () => {
 };
 
 const toggleMobileMenu = () => {
-  toggleMenu.classList.toggle("hamburger-toggle");
   toggleMenu.setAttribute(
     "aria-expanded",
     toggleMenu.getAttribute("aria-expanded") === "true" ? "false" : "true",

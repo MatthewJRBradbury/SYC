@@ -9,12 +9,6 @@
   }
 }
 
-@layer utilities {
-  .hamburger-toggle {
-    @apply [&>div]:h-0 [&>div]:bg-white [&>div]:before:translate-y-0 [&>div]:before:rotate-45 [&>div]:after:translate-y-0 [&>div]:after:-rotate-45;
-  }
-}
-
 @font-face {
   font-family: "Noto Serif";
   font-style: normal;
