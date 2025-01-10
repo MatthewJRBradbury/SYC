@@ -60,20 +60,72 @@
         </div>
         <a
           href="/SYC/book-appointment/"
-          class="ml-auto hidden rounded-sm border border-roseAccent bg-roseAccent bg-gradient-to-r from-roseAccent to-roseAccent px-8 py-4 text-center text-white hover:opacity-85 lg:block lg:px-8"
+          class="ml-auto hidden rounded-sm border border-roseAccent bg-roseAccent bg-gradient-to-r from-roseAccent to-roseAccent px-7 py-4 text-center text-white hover:opacity-85 lg:block lg:px-8"
           >BOOK APPOINTMENT</a
         >
       </nav>
       <!-- Burger Menu Button -->
       <button
+        class="relative z-50 h-7 w-12 scale-150 border-0 bg-transparent p-0 transition-all duration-300 contrast-more:mix-blend-difference lg:hidden"
         id="mobile-nav-toggle"
-        class="z-50 h-7 cursor-pointer place-content-center p-3 lg:hidden"
+        aria-label="Open Menu"
         aria-expanded="false"
-        aria-label="Mobile navigation toggle"
       >
-        <div
-          class="grid h-0.5 w-7 rounded-full bg-white transition-all duration-150 before:absolute before:h-0.5 before:w-7 before:-translate-y-1.5 before:rounded-full before:bg-white before:transition-all before:duration-150 before:content-[''] after:absolute after:h-0.5 after:w-7 after:translate-y-1.5 after:rounded-full after:bg-white after:transition-all after:duration-150 after:content-['']"
-        ></div>
+        <span class="sr-only">Open Menu</span>
+        <svg
+          class="block h-7 w-12"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 10 10"
+          stroke="#ffffff"
+          stroke-width=".6"
+          fill="rgba(0,0,0,0)"
+          stroke-linecap="round"
+          style="cursor: pointer"
+        >
+          <path d="M2,3.5L5,3.5L8,3.5M2,5L8,5M2,6.5L5,6.5L8,6.5">
+            <animate
+              dur=".2s"
+              attributeName="d"
+              values="M2,3.5L5,3.5L8,3.5M2,5L8,5M2,6.5L5,6.5L8,6.5;M3,3L5,5L7,3M5,5L5,5M3,7L5,5L7,7"
+              fill="freeze"
+              begin="start.begin"
+              id="bmOpenAnimation"
+            />
+            <animate
+              dur=".2s"
+              attributeName="d"
+              values="M3,3L5,5L7,3M5,5L5,5M3,7L5,5L7,7;M2,3.5L5,3.5L8,3.5M2,5L8,5M2,6.5L5,6.5L8,6.5"
+              fill="freeze"
+              begin="reverse.begin"
+              id="bmCloseAnimation"
+            />
+          </path>
+          <rect width="10" height="10" stroke="none">
+            <animate
+              dur="2s"
+              id="reverse"
+              attributeName="width"
+              begin="click"
+            />
+          </rect>
+          <rect width="10" height="10" stroke="none">
+            <animate
+              dur="0.001s"
+              id="start"
+              attributeName="width"
+              values="10;0"
+              fill="freeze"
+              begin="click"
+            />
+            <animate
+              dur="0.001s"
+              attributeName="width"
+              values="0;10"
+              fill="freeze"
+              begin="reverse.begin"
+            />
+          </rect>
+        </svg>
       </button>
       <!-- Burger Menu Overlay -->
       <div

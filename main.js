@@ -6,16 +6,26 @@ const toggleMenu = document.querySelector("#mobile-nav-toggle");
 const mobileMenuScreen = document.querySelector("#mobile-nav-menu");
 const lastLink = mobileMenuScreen.querySelector("nav div a:last-of-type");
 const body = document.body;
+const bmOpenAnimation = document.getElementById("bmOpenAnimation");
+const bmCloseAnimation = document.getElementById("bmCloseAnimation");
 
 toggleMenu.onclick = () => {
   toggleMobileMenu();
 };
 
 const toggleMobileMenu = () => {
-  toggleMenu.setAttribute(
-    "aria-expanded",
-    toggleMenu.getAttribute("aria-expanded") === "true" ? "false" : "true",
-  );
+  const isExpanded = toggleMenu.getAttribute("aria-expanded") === "true";
+
+  // toggle menu state
+  toggleMenu.setAttribute("aria-expanded", isExpanded ? "false" : "true");
+  // trigger animation
+  // Trigger the appropriate animation
+  if (isExpanded) {
+    bmCloseAnimation.beginElement();
+  } else {
+    bmOpenAnimation.beginElement();
+  }
+  // menu visibility
   mobileMenuScreen.classList.toggle("hidden");
   body.classList.toggle("fixed");
 };
@@ -32,7 +42,6 @@ mobileMenuScreen.addEventListener("keydown", (event) => {
   }
   if (event.key === "Escape") {
     toggleMobileMenu();
-    
   }
 });
 
