@@ -21,7 +21,7 @@ export default defineConfig({
         contact: "./contact/index.html/",
         privacy: "./privacy/index.html/",
         about: "./about-me/index.html/",
-        services: "./services/index.html/",
+        'services-and-fees': "./services-and-fees/index.html/",
       },
     },
   },
